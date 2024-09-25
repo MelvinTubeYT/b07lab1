@@ -1,7 +1,7 @@
 public class Polynomial {
     double[] coefficients;
         
-    Polynomial(){
+    Polynomial(){ 
         this.coefficients = new double[] {0};
         }
         
@@ -28,8 +28,8 @@ public class Polynomial {
             }
         }
     
-    double evaluate(double x){
-        double sum = 0.0;
+    double evaluate(double x){ // change
+        double sum = 2.0; //change 0 to 2
         for(int i=0; i< coefficients.length;i++){
             sum += this.coefficients[i]*(Math.pow(x, i));
             }
